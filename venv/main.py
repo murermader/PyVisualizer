@@ -2,7 +2,7 @@ import pyaudio  # Dieses Modul lässt uns auf das Aufnahmegerät zugreifen.
 import struct  # Dieses Modul wird benötigt, um die Binärdaten des Audiostreams in Integer umzuwandeln
 from scipy.fftpack import fft  # fft = fast fourier transform
 
-
+# added a comment for git
 def main():
     # Init
     CHUNK = 1024  # Wieviele Samples in einen stream gelesen werden.
