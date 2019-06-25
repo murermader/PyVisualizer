@@ -1,0 +1,31 @@
+---Programmstart---
+
+- Programm wird gestartet, ein Terminal geht auf.
+- Es nach dem Modus gefragt, von dem es 2 geben wird.
+    - Live-Modus. Bei diesem Modus wird das Signal vom default_input_device genommen. (Thoeretisch wäre hier auch eine Auswahl möglich, per Auflistung der verfügbaren Geräte)
+    - Media-Modus. Bei diesem Modus kann eine Datei wiedergegeben werden, und dabei das Spektrum angezeigt werden.
+
+---Visualisierung---
+
+Bei Lösung mit Balken / LED's muss das Spektrum möglicherweise geglättet werden, damit die Balken nicht zu uneregelmäßig sind.
+Die LED's (oder Balken) sollten so lange leuchten, bis das nächste Signal eintrifft.
+    - Falls kein Signal in den nächsten 10ms (geschätzt) eintritt, sollen die Balken langsam wieder sinken, bis sie bei 0 angekommen sind.
+
+- Per LED:
+    - Es muss angegeben werden, wieviele Reihen mit jeweils vielen LED's jede Reihe besitzt.
+    - Basierend auf der Anzahl der LED's, soll das Signal so skaliert werden, dass ein brauchbares Ergebnis rauskommt.
+    - Wie wird entschieden, wieviele Bänder der Visualizer haben soll???
+- Per Display
+    - Welche Library soll genutzt werden, um das Signal zu zeichnen ???
+    - Darstellung möglicherweise als Balkendiagramm, bei dem jeder Balken einem Frequenzband entspricht
+
+---Programmsteuerung---
+
+- Mit Ctrl+D bzw. Ctrl+C soll das Programm beendet werden.
+- Es muss eine Taste geben, um den aktuellen Modus zu verlassen, um wieder in den Initialisierungsmodus (also -> Programmstart) zu gelangen.
+    - Von hier aus der kann Prozess dann von neuem gestartet werden
+- Im Media-Modus muss es ein paar Tastenbefehle geben, um das Programm zu steuern.
+    - Wiedergabe / Pause
+    - Vorspulen / Zurückspulen (gedrückt halten)
+    - Stopp
+    - Lauter / Leiser
